@@ -61,7 +61,7 @@ bool Circle::circle_check(float r, float x, float y) {
 }
 
 void Circle::show() {
-	cout << "Ðàäèóñ: " << radius << endl;
-	cout << "Öåíòð ïî X: " << x_center << endl;
-	cout << "Öåíòð ïî Y: " << y_center << endl;
+	cout << "Ð Ð°Ð´Ð¸ÑƒÑ: " << radius << endl;
+	cout << "Ð¦ÐµÐ½Ñ‚Ñ€ Ð¿Ð¾ X: " << x_center << endl;
+	cout << "Ð¦ÐµÐ½Ñ‚Ñ€ Ð¿Ð¾ Y: " << y_center << endl;
 };
