@@ -66,12 +66,12 @@ Sea::Sea(Ocean* obj, string n) {
 
 ostream& operator << (ostream& stream, Sea obj) {
     setlocale(LC_ALL, "ru");
-    stream << "Íàçâàíèå ìîðÿ: " << obj.getName() << endl;
-    stream << "Ðàñïîëîæåíèå: " << obj.getLocation() << endl;
-    stream << "Ðàçìåð: " << obj.getSize() << endl;
-    stream << "Ãëóáèíà: " << obj.getDepth() << endl;
-    stream << "Ïëîùàäü ïîâåðõíîñòè: " << obj.getSquare() << endl;
-    stream << "Òåìïåðàòóðà: " << obj.getTemp() << endl << endl;
+    stream << "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð¼Ð¾Ñ€Ñ: " << obj.getName() << endl;
+    stream << "Ð Ð°ÑÐ¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ: " << obj.getLocation() << endl;
+    stream << "Ð Ð°Ð·Ð¼ÐµÑ€: " << obj.getSize() << endl;
+    stream << "Ð“Ð»ÑƒÐ±Ð¸Ð½Ð°: " << obj.getDepth() << endl;
+    stream << "ÐŸÐ»Ð¾Ñ‰Ð°Ð´ÑŒ Ð¿Ð¾Ð²ÐµÑ€Ñ…Ð½Ð¾ÑÑ‚Ð¸: " << obj.getSquare() << endl;
+    stream << "Ð¢ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ð°: " << obj.getTemp() << endl << endl;
     return stream;
 }
 
@@ -84,27 +84,27 @@ istream& operator>>(istream& stream, Sea& obj) {
     double square;
     double temp;
 
-    cout << "Ââåäèòå íàçâàíèå ìîðÿ: ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð¼Ð¾Ñ€Ñ: ";
     stream >> name;
     obj.setName(name);
 
-    cout << "Óêàæèòå ðàñïîëîæåíèå: ";
+    cout << "Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ñ€Ð°ÑÐ¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ: ";
     stream >> location;
     obj.setLocation(location);
 
-    cout << "Óêàæèòå ðàçìåð: ";
+    cout << "Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€: ";
     stream >> size;
     obj.setSize(size);
 
-    cout << "Óêàæèòå ãëóáèíó: ";
+    cout << "Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð³Ð»ÑƒÐ±Ð¸Ð½Ñƒ: ";
     stream >> depth;
     obj.setDepth(depth);
 
-    cout << "Óêàæèòå ïëîùàäü ïîâåðõíîñòè: ";
+    cout << "Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð¿Ð»Ð¾Ñ‰Ð°Ð´ÑŒ Ð¿Ð¾Ð²ÐµÑ€Ñ…Ð½Ð¾ÑÑ‚Ð¸: ";
     stream >> square;
     obj.setSquare(square);
 
-    cout << "Óêàæèòå òåìïåðàòóðó: ";
+    cout << "Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ñ‚ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ñƒ: ";
     stream >> temp;
     obj.setTemp(temp);
 
@@ -129,7 +129,7 @@ void Sea::setName(string n) {
     }
 
     if (error) {
-        cout << "Óêàçàíî íåêîððåêòíîå íàçâàíèå ìîðÿ!" << endl;
+        cout << "Ð£ÐºÐ°Ð·Ð°Ð½Ð¾ Ð½ÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ð¾Ðµ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð¼Ð¾Ñ€Ñ!" << endl;
     }
     else name = n;
 
