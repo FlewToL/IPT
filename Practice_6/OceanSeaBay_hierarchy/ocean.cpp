@@ -71,12 +71,12 @@ double Ocean::getTemp() {
 
 ostream& operator<<(ostream& stream, Ocean& obj) {
     setlocale(LC_ALL, "ru");
-    stream << "Íàçâàíèå îêåàíà: " << obj.name << endl;
-    stream << "Ðàñïîëîæåíèå: " << obj.location << endl;
-    stream << "Ðàçìåð: " << obj.size << endl;
-    stream << "Ãëóáèíà: " << obj.depth << endl;
-    stream << "Ïëîùàäü ïîâåðõíîñòè: " << obj.square << endl;
-    stream << "Òåìïåðàòóðà: " << obj.temp << endl;
+    stream << "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð¾ÐºÐµÐ°Ð½Ð°: " << obj.name << endl;
+    stream << "Ð Ð°ÑÐ¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ: " << obj.location << endl;
+    stream << "Ð Ð°Ð·Ð¼ÐµÑ€: " << obj.size << endl;
+    stream << "Ð“Ð»ÑƒÐ±Ð¸Ð½Ð°: " << obj.depth << endl;
+    stream << "ÐŸÐ»Ð¾Ñ‰Ð°Ð´ÑŒ Ð¿Ð¾Ð²ÐµÑ€Ñ…Ð½Ð¾ÑÑ‚Ð¸: " << obj.square << endl;
+    stream << "Ð¢ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ð°: " << obj.temp << endl;
     return stream;
 }
 
